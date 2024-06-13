@@ -208,7 +208,6 @@ body{
     /* Estilos específicos para dispositivos con un ancho máximo de 768px */
     #container {
         width: 60vw; /* Cambia el ancho del contenedor para dispositivos más pequeños */
-        margin-top: 20px;
         margin: 0 auto; /* Centra el contenedor horizontalmente */
         display: flex; /* Utiliza flexbox */
         flex-direction: column; /* Direcciona los elementos verticalmente */
@@ -216,14 +215,31 @@ body{
         justify-content: center; /* Centra los elementos verticalmente */
 
     }
-    div{
-        margin-top: 30px;
-    }
     h1 {
-        margin-top: 30px;
+        
         font-size: 2.5em; /* Reduce el tamaño del título */
         letter-spacing: 4px; /* Reduce el espaciado de letras */
     }
+    #titulo-arriba {
+      margin-top: 50px; /* Ajusta el margen superior solo para este h1 */
+
+    }
+    #titulo-abajo {
+      margin-bottom: -100px; /* Ajusta el margen superior solo para este h1 */
+
+  }
+    .image-container {
+      margin-top: 0px; /* Ajusta este valor según sea necesario */
+      display: flex;
+      flex-wrap: wrap; /* Asegura que las imágenes se envuelvan correctamente */
+      justify-content: center; /* Centra las imágenes horizontalmente */
+  }
+
+  .image-container img {
+      margin: 5px; /* Ajusta el espacio entre las imágenes */
+      max-width: 100%; /* Asegura que las imágenes no excedan su contenedor */
+      height: auto;
+  }
 }
 .image-container {
     margin-top: 200px;
